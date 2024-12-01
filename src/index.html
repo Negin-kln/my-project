@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با ما | بنیاد وکلا</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/image/logo.svg"
+      type="image/x-icon"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: "Vazirmatn", serif;
+        background-color: #f1f5f9;
+      }
+    </style>
+  </head>
+  <body dir="rtl" class="dark dark:bg-gray-500">
+    <header class="w-full h-[80px] bg-white dark:bg-gray-700">
+      <nav
+        class="shadow-md shadow-slate-300 dark:shadow-slate-800 w-full h-full flex items-center"
+      >
+        <a href="https://flowbite.com/" class="flex items-center w-[150px]">
+          <img
+            src="../assets/image/logo-type.svg"
+            class="h-8 ms-4"
+            alt=" Logo"
+          />
+        </a>
+        <div
+          class="flex flex-wrap items-center justify-between p-4 col-span-1 w-full"
+        >
+          <div class="cols-start-2 m-3 flex justify-between lg:order-2">
+            <div class="relative hidden xl:block">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-6 h-6 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+                <span class="sr-only">Search icon</span>
+              </div>
+              <input
+                type="text"
+                id="search-navbar"
+                class="block w-[200px] h-[45px] p-2 ps-10 text-md text-gray-900 border border-gray-200 outline-none rounded-md bg-white focus:ring-gray-500 focus:border-gray-500 dark:bg-gray-600 dark:border-gray-400 dark:placeholder-gray-400 dark:text-white dark:focus:ring-slate-400 dark:focus:border-slate-300"
+                placeholder="جستجو ..."
+              />
+            </div>
+
+            <div
+              id="mega-menu"
+              class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
+            >
+              <ul
+                class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 rtl:space-x-reverse"
+              >
+                <li class="group">
+                  <button
+                    id="mega-menu-dropdown-button"
+                    data-dropdown-toggle="mega-menu-dropdown"
+                    class="flex items-center justify-between w-full p-2 ms-6 font-normal text-black bg-white md:w-auto hover:p-2 hover:text-dark hover:rounded-full hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-400 dark:group-hover:text-gray-900"
+                  >
+                    مشاور حقوقی<span
+                      class="bg-green-200 text-green-900 text-xs font-medium mx-2 px-1 py-0.5 rounded dark:bg-gray-800 dark:text-gray-300"
+                      >24/7</span
+                    >
+                    <svg
+                      class="w-2 h-2 text-green-700 dark:text-gray-300 dark:group-hover:text-gray-900"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="mega-menu-dropdown"
+                    class="absolute z-10 hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
+                  ></div>
+                </li>
+                <li class="group">
+                  <button
+                    id="mega-menu-dropdown-button"
+                    data-dropdown-toggle="mega-menu-dropdown"
+                    class="flex items-center justify-between w-full p-2 ms-6 font-normal text-black bg-white md:w-auto hover:p-2 hover:text-dark hover:rounded-full hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-400 dark:group-hover:text-gray-900"
+                  >
+                    جستجوی وکیل پایه یک
+                    <svg
+                      class="w-2 h-2 ms-2 text-green-700 dark:text-gray-300 dark:group-hover:text-gray-900"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="mega-menu-dropdown"
+                    class="absolute z-10 hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
+                  ></div>
+                </li>
+                <li class="group">
+                  <button
+                    id="mega-menu-dropdown-button"
+                    data-dropdown-toggle="mega-menu-dropdown"
+                    class="flex items-center justify-between w-full p-2 ms-6 font-normal text-black bg-white md:w-auto hover:p-2 hover:text-dark hover:rounded-full hover:bg-gray-100 dark:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-400 dark:group-hover:text-gray-900"
+                  >
+                    تنظیم شکایت
+                    <svg
+                      class="w-2 h-2 ms-2 text-green-700 dark:text-gray-300 dark:group-hover:text-gray-900"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <div
+                    id="mega-menu-dropdown"
+                    class="absolute z-10 hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
+                  ></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button
+            type="button"
+            data-collapse-toggle="navbar-search"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+            class="xl:hidden text-gray-500 border border-2 border-gray-200 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 text-sm p-2.5 me-1 dark:text-gray-400 dark:border-gray-400 dark:hover:border-gray-900 dark:hover:bg-gray-700 dark:hover:text-gray-900 dark:focus:ring-gray-700"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+              />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+        </div>
+        <div
+          class="ms-auto border-0 border-r-2 border-gray-200 dark:border-black w-[320px] md:w-[230px] lg:w-[200px] h-full flex justify-center items-center px-2"
+        >
+          <a href="https://www.bonyadvokala.com/tel:+982142818">
+            <i
+              class="fa fa-volume-control-phone rotate-180 text-gray-400 dark:text-gray-200"
+              aria-hidden="true"
+            ></i>
+            <span class="text-lg font-bold text-gray-600 dark:text-gray-200"
+              >42818(021)</span
+            >
+          </a>
+        </div>
+        <div
+          class="ms-auto border-0 border-r-2 border-gray-200 dark:border-black w-[340px] md:w-[230px] lg:w-[200px] h-full flex justify-center items-center"
+        >
+          <button
+            type="button"
+            class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-slate-950 dark:hover:text-gray-700 dark:hover:bg-gray-200 focus:outline-none"
+          >
+            ورود / ثبت نام
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mx-auto my-10">
+        <div class="row xl:grid xl:grid-cols-2 xl:mx-10">
+          <div
+            class="columns-1 m-10 lg:mt-0 bg-white rounded-md shadow-sm shadow-slate-300 dark:bg-gray-800 dark:shadow-blue-900"
+          >
+            <form action="" class="px-8 py-8">
+              <h1 class="text-black font-bold text-3xl mb-6 dark:text-gray-400">
+                تماس با ما
+              </h1>
+              <div
+                class="border border-yellow-400 rounded-md text-yellow-600 bg-yellow-50 p-3 dark:text-blue-950 dark:bg-slate-400 dark:border-blue-950"
+              >
+                اگر نیاز به مشاوره حقوقی دارید به صفحه مربوطه مراجعه کنید. به
+                سوالات حقوقی شما در فرم تماس با ما ترتیب اثر داده نخواهد شد.
+                <a
+                  href="https://www.bonyadvokala.com/ask"
+                  class="text-blue-400 hover:text-blue-700 dark:text-sky-700"
+                  >مشاوره حقوقی آنلاین رایگان</a
+                >
+              </div>
+              <div class="my-8">
+                <input
+                  type="text"
+                  placeholder="نام و نام خانوادگی"
+                  class="bg-stone-50 w-full px-3 py-5 rounded-md placeholder:text-slate-500 outline-none dark:bg-slate-200 dark:placeholder:text-gray-800"
+                />
+              </div>
+              <div class="my-8">
+                <input
+                  type="tel"
+                  placeholder="تلفن همراه"
+                  class="bg-stone-50 w-full px-3 py-5 rounded-md placeholder:text-slate-500 outline-none dark:bg-slate-200 dark:placeholder:text-gray-800"
+                  dir="rtl"
+                />
+              </div>
+              <div class="my-8">
+                <input
+                  type="text"
+                  placeholder="آدرس ایمیل"
+                  class="bg-stone-50 w-full px-3 py-5 rounded-md placeholder:text-slate-500 outline-none dark:bg-slate-200 dark:placeholder:text-gray-800"
+                />
+              </div>
+              <div class="my-8">
+                <label
+                  for="select"
+                  class="block bg-stone-50 text-sm text-slate-500 px-3 pt-1 rounded-t-md dark:bg-slate-200 dark:text-gray-500"
+                >
+                  واحد
+                </label>
+                <select
+                  id="select"
+                  class="bg-stone-50 text-slate-800 w-full px-3 pb-3 rounded-b-md outline-none dark:bg-slate-200 dark:text-gray-800"
+                >
+                  <option selected>واحد مورد نظر</option>
+                  <option value="finance">مالی</option>
+                  <option value="complaint">شکایات</option>
+                  <option value="support">پشتیبانی</option>
+                  <option value="content">مدیریت محتوا</option>
+                  <option value="supervision_audit">کنترل و ممیزی</option>
+                  <option value="dev">واحد فنی ‌(توسعه)</option>
+                  <option value="management">مدیریت</option>
+                </select>
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700"
+                >
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  ></svg>
+                </div>
+              </div>
+              <div class="mt-8">
+                <label
+                  for="comment"
+                  class="block bg-stone-50 text-slate-700 text-sm px-5 py-2 rounded-t-md dark:bg-slate-200 dark:text-gray-500"
+                >
+                  پیغام
+                </label>
+                <input
+                  type="text"
+                  id="comment"
+                  placeholder="لطفا به فارسی نوشته شود"
+                  class="bg-stone-50 text-slate-800 w-full px-4 pb-4 rounded-b-md outline-none border-b-2 border-b-slate-500 dark:bg-slate-200 dark:placeholder:text-gray-800 dark:border-b-blue-700"
+                />
+              </div>
+              <button
+                class="button bg-blue-500 rounded-lg text-white hover:bg-blue-600 mt-4 dark:bg-slate-500 dark:text-black dark:hover:bg-slate-300"
+              >
+                <div class="flex justify-between items-center px-8 py-3">
+                  ارسال<i
+                    class="fa fa-long-arrow-left relative top-1/2 start-6"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </button>
+            </form>
+          </div>
+          <div class="columns-1 m-10 lg:mt-0">
+            <div
+              class="bg-white py-10 px-3 rounded-md shadow-sm shadow-slate-300 dark:bg-gray-800 dark:shadow-blue-900"
+            >
+              <div class="border-0 border-b border-slate-200 mx-5">
+                <h6
+                  class="text-black font-bold text-md mb-2 dark:text-gray-400"
+                >
+                  آدرس
+                </h6>
+                <p class="mb-7 dark:text-gray-100">
+                  تهران، خیابان ولیعصر، بالاتر از فاطمی، کوچه نوروزی، پلاک ۴۷،
+                  واحد ۱۰
+                </p>
+              </div>
+              <div class="border-0 border-b border-slate-200 mx-5">
+                <div class="mt-7">
+                  <h6
+                    class="text-black font-bold text-md mb-2 dark:text-gray-400"
+                  >
+                    شماره تماس
+                  </h6>
+                  <p class="mb-7 dark:text-gray-100">۴۲۸۱۸ (۰۲۱)</p>
+                </div>
+                <div class="mt-7">
+                  <h6
+                    class="text-black font-bold text-md mb-2 dark:text-gray-400"
+                  >
+                    آدرس ایمیل
+                  </h6>
+                  <p class="mb-7 dark:text-gray-100">info@bonyadvokala.com</p>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mx-5">
+                <h6
+                  class="text-black font-bold text-md mb-2 dark:text-gray-400"
+                >
+                  شبکه‌های اجتماعی
+                </h6>
+                <div class="flex text-3xl text-slate-700 mt-7">
+                  <a
+                    href="https://twitter.com/bonyadvokala"
+                    class="hover:text-blue-800 dark:text-gray-300"
+                    ><i class="fa fa-twitter px-2" aria-hidden="true"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/bonyadvokala"
+                    class="hover:text-blue-800 dark:text-gray-300"
+                    ><i class="fa fa-instagram px-2" aria-hidden="true"></i
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/bonyadvokala"
+                    class="hover:text-blue-800 dark:text-gray-300"
+                    ><i
+                      class="fa fa-facebook-square px-2"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <a
+                    href="https://t.me/bonyadvokala"
+                    class="hover:text-blue-800 dark:text-gray-300"
+                    ><i class="fa fa-telegram px-2" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="flex-col my-7 text-center dark:text-gray-400">
+                <p>
+                  کلیه حقوق مادی و معنوی بنیاد وکلا متعلق به گروه نوآوران نیک
+                  داده پرداز است.
+                </p>
+                <a
+                  href="https://www.bonyadvokala.com/terms"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400"
+                  >قوانین و مقررات استفاده</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container mx-auto">
+        <div
+          class="row xl:grid xl:grid-cols-4 justify-between rounded-md p-20 m-10"
+          style="background-color: #334155"
+        >
+          <div class="columns-1">
+            <strong
+              class="text-gray-300 text-xl font-bold border-0 border-b-2 border-gray-500"
+              >برای وکلا
+            </strong>
+            <ul class="py-[30px] text-gray-300 font-bold">
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/for-lawyers/profile"
+                >
+                  پروفایل وکیل
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/for-lawyers"
+                >
+                  راهنمای سریع وکیل
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/for-lawyers/rocket"
+                >
+                  تبلیغات حقوقی وکیل
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="columns-1">
+            <strong
+              class="text-gray-300 text-xl font-bold border-0 border-b-2 border-gray-500"
+              >خدمات</strong
+            >
+            <ul class="py-[30px] text-gray-300 font-bold">
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/lawyers"
+                >
+                  جستجوی وکیل
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D8%AD%D9%82%D9%88%D9%82%DB%8C"
+                >
+                  مشاوره حقوقی تلفنی و آنلاین رایگان
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D8%AD%D9%82%D9%88%D9%82%DB%8C"
+                >
+                  مشاوره حقوقی
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/products/telephone"
+                >
+                  مشاوره حقوقی تلفنی
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87-%D8%AD%D9%82%D9%88%D9%82%DB%8C"
+                >
+                  مشاوره حقوقی آنلاین
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/products/contract"
+                >
+                  تنظیم قرارداد
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/products/legalforms"
+                >
+                  تنظیم اوراق قضایی
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/products/legalforms/petition"
+                >
+                  تنظیم دادخواست
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/products/legalforms/complaint"
+                >
+                  تنظیم شکواییه
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/products/legalforms/bill"
+                >
+                  تنظیم لایحه
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/products/legalforms/declaration"
+                >
+                  تنظیم اظهارنامه
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="columns-1">
+            <strong
+              class="text-gray-300 text-xl font-bold border-0 border-b-2 border-gray-500"
+              >دسترسی‌ها</strong
+            >
+            <ul class="py-[30px] text-gray-300 font-bold">
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/blog/"
+                >
+                  مجله بنیاد وکلا
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/blog"
+                >
+                  وبلاگ
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/about"
+                >
+                  درباره ما
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/contact"
+                >
+                  تماس با ما
+                </a>
+              </li>
+              <li class="py-[8px]">
+                <a
+                  class="hover:text-gray-50"
+                  href="https://www.bonyadvokala.com/terms"
+                >
+                  قوانین و مقررات
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="columns-1">
+            <a href="https://www.bonyadvokala.com/tel:+982142818">
+              <div
+                class="flex items-center justify-between bg-green-500 px-2 rounded-full w-[290px] h-[100px] mx-auto mb-6"
+              >
+                <img
+                  src="../assets/image/support-placeholder.jpg"
+                  alt=""
+                  class="w-[95px] h-[95px] rounded-full block ml-3"
+                />
+                <div
+                  class="flex-row justify-center items-center text-gray-100 me-3"
+                >
+                  <span>راهنمای دریافت خدمات</span><br />
+                  <span class="text-xl font-bold"> ۴۲۸۱۸ (۰۲۱) </span>
+                </div>
+              </div>
+            </a>
+            <div class="text-center mb-7">
+              <div class="mb-2 text-white">
+                <a href="https://www.bonyadvokala.com/app">
+                  دانلود اپلیکیشن بنیاد وکلا
+                </a>
+              </div>
+              <div>
+                <a href="https://cafebazaar.ir/app/com.bonyadvokala.www.twa"
+                  ><img
+                    src="../assets/image/cafebazar.svg"
+                    alt=""
+                    class="w-[160px] inline-block"
+                /></a>
+              </div>
+            </div>
+            <div
+              class="text-gray-300 font-bold text-xl text-center hover:text-white"
+            >
+              <a href="https://twitter.com/bonyadvokala"
+                ><i class="fa fa-twitter px-1" aria-hidden="true"></i
+              ></a>
+              <a href="https://www.instagram.com/bonyadvokala"
+                ><i class="fa fa-instagram px-1" aria-hidden="true"></i
+              ></a>
+              <a href="https://www.facebook.com/bonyadvokala"
+                ><i class="fa fa-facebook-official px-1" aria-hidden="true"></i
+              ></a>
+              <a href="https://t.me/bonyadvokala"
+                ><i class="fa fa-telegram px-1" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto">
+        <div class="text-center">
+          <a href="https://www.bonyadvokala.com/"
+            ><img
+              src="../assets/image/logo.svg"
+              alt="logo"
+              class="w-[50px] mx-auto"
+          /></a>
+          <p class="pt-5">تمام حقوق برای بنیاد وکلا محفوظ است.</p>
+          <p class="font-light text-sm my-20">
+            <i class="fa fa-gg" aria-hidden="true"></i>محصولی از
+            <a
+              href="https://ndp.ir/"
+              class="text-black font-normal hover:text-blue-600 dark:hover:text-blue-900"
+              ><u>نیک داده پرداز</u></a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
